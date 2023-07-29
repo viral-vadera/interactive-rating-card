@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  justify-content: center;
+  align-items: center;
+}
+
+.card__rating--start {
+  width: 30%;
+  height: 52.5%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 35px;
+  height: 35px;
+  background-color: hsl(216, 12%, 54%);
+  display: flex;
+  border-radius: 100%;
+}
+
+.star img {
+  justify-content: center;
+  align-items: center;
+  margin-left: 11px;
+  margin-top: 11px;
+  height: 13px;
+  width: 13px;
+}
+
+.info {
+  margin-top: 85px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.info h2 {
+  font-family: "Overpass", sans-serif;
+  font-family: 700;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: hsl(216, 12%, 54%);
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.rating__meachanism {
+  display: flex;
+  gap: 2px;
+  margin: 25px 25px 0 25px;
+  justify-content: space-between;
+}
+
+.rating__meachanism div {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: hsl(216, 12%, 54%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rating__meachanism div:hover {
+  background-color: hsl(216, 12%, 54%, 0.2);
+}
+
+/* to be done with js */
+/* .rating__meachanism div: {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+} */
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  margin: 30px 25px 0 25px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+@media only screen and (max-width: 375px) {
+  .card__rating--start {
+    width: 85%;
+    height: 60%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .star {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(216, 12%, 54%, 0.1);
+    display: flex;
+    border-radius: 100%;
+  }
+
+  .star img {
+    margin-left: 13px;
+    margin-top: 13px;
+  }
+  .submit {
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+}
+
+/* card thankyou css */
+
+.card__rating--thankyou {
+  width: 30%;
+  height: 52.5%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 20px;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.thankImg {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankImg img {
+  height: 100px;
+  width: 125px;
+}
+
+.rating {
+  background-color: hsl(216, 12%, 54%, 0.2);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  color: hsl(25, 97%, 53%);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.thankInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thankInfo h2 {
+  font-family: "Overpass", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.thankInfo p {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  color: hsl(216, 12%, 54%);
+  line-height: 23px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card__rating--thankyou {
+    width: 85%;
+    height: 60%;
+  }
+}
+
+/* functional classes */
+.hidden {
+  display: none;
+}
